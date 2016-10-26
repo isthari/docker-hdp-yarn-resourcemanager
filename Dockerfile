@@ -1,7 +1,7 @@
 FROM isthari/hdp-base
 
 RUN apt-get update
-RUN apt-get install -y hadoop-yarn-resourcemanager hadoop-yarn-proxyserver
+RUN apt-get -y install hadoop hadoop-hdfs libhdfs0 hadoop-yarn hadoop-mapreduce hadoop-client openssl
 
 EXPOSE 8088 8033 8032 8031 8030
 
